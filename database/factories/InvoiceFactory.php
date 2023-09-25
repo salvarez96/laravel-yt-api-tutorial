@@ -17,7 +17,7 @@ class InvoiceFactory extends Factory
      */
     public function definition(): array
     {
-        $status = $this->faker->randomElements(['paid', 'billed', 'void']);
+        $status = $this->faker->randomElement(['paid', 'billed', 'void']);
         $billedDate = $this->faker->dateTimeThisDecade();
 
         return [
